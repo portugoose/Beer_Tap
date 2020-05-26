@@ -30,6 +30,7 @@ int pos = 0;
 void setup() {
   // Initialize serial and wait for port to open:
   pinMode(LED, OUTPUT);
+  Servo1.write(0);
   Servo1.attach(servoPin);
     Serial.begin(9600);
   // This delay gives the chance to wait for a Serial Monitor without blocking if none is found
@@ -67,13 +68,14 @@ void onBeerChange() {
  if(beer.getSwitch()){
    Serial.println("Changing to high");
    digitalWrite(LED, HIGH);
-   for(pos = 0; pos <=180; pos+=5){
+   for(pos = 0; pos <=10; pos+=1){
     Servo1.write(pos);
-    delay(20);
+    delay(100);
    }
-   for(pos = 180; pos >=0; pos -=5){
+   delay(500);
+   for(pos = 10; pos >=0; pos -=1){
     Servo1.write(pos);
-    delay(20);
+    delay(100);
    }
    
    digitalWrite(LED, LOW);
