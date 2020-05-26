@@ -12,6 +12,7 @@ For the coding aspect I followed the directions from (https://blog.arduino.cc/20
 
 I will be updating this document with a parts list once I have the motor recieved and have a working proto type that I can record.
 
+Under the issues tab you will find pictures and will be posting more.
 Here is a video for what I have currently working: https://youtu.be/Dsof3aiYZY4
 
 Let me know if you have any questions
