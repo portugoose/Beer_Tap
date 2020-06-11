@@ -8,7 +8,7 @@ using Microsoft.Extensions.Logging;
 namespace beerService.Controllers
 {
     [ApiController]
-    [Route("[controller]")]
+    [Route("")]
     public class BeerController : ControllerBase
     {
 
